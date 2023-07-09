@@ -23,8 +23,18 @@ Test scenarios for Facebook sign-up page in a text file using Gherkin language m
 5. Reduce the quantity from 2 to 1 in Cart for the item selected in the step 3
 6. Assert that the total price and quantity has been correctly changed
 
-# Problems to solve
+## Setting up the environment
+
+In order to run this, you will need the following tools installed in your system:
+- java > 17
+- maven > 3.9.3
+- Firefox installed, the webdriver manager will download the driver for the right version
+
+This configuration has been tested with windows, ubuntu and mac. Also, you can change the browser in the DriverFactory class.
+
+## Problems to solve
 
 - [x] Set a World to be able to share information between steps in a secure and reliable way
-- [ ] Use a webdriver manager
+- [x] Use a webdriver manager
 - [x] Basic html reporting
+- [ ] browser setting from properties file
