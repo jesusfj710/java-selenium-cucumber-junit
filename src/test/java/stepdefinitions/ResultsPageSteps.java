@@ -14,7 +14,7 @@ public class ResultsPageSteps {
     }
 
     @Given("the user adds the first product appearing to Cart with quantity {int}")
-    public void the_user_adds_the_first_product_appearing_to_Cart_with_quantity(Integer quantity) {
+    public void theUserAddsTheFirstProductAppearingToCartWithQuantity(Integer quantity) {
         resultsPage.clickFirstElement();
         productPage.addProductToCartWithQuantity(quantity);
     }

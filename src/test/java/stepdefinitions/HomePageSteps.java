@@ -12,12 +12,12 @@ public class HomePageSteps {
     }
 
     @Given("the user is on the Amazon homepage")
-    public void the_user_is_on_the_Amazon_homepage() {
+    public void theUserIsOnTheAmazonHomepage() {
         homepage.open();
     }
 
     @When("the user searches for {string}")
-    public void the_user_searches_for(String string) {
+    public void theUSerSearchesFor(String string) {
         homepage.searchForItem(string);
     }
 }

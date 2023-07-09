@@ -16,12 +16,12 @@ public class CartPageSteps {
     }
 
     @When("the user opens the Cart")
-    public void the_user_opens_the_Cart() {
+    public void theUserOpensTheCart() {
         cartPage.open();
     }
 
     @When("the user updates the quantity to {int} in Cart")
-    public void the_user_updates_the_quantity_to_int_in_Cart(int quantity) {
+    public void theUserUpdatesTheQuantityToIntInCart (int quantity) {
         CartEntryInfo previousCartEntryInfo = World.getCartEntryInfo();
         double originalAmountPerItem = previousCartEntryInfo.getAmount() / previousCartEntryInfo.getQuantity();
         cartPage.updateQuantity(quantity);
@@ -29,13 +29,13 @@ public class CartPageSteps {
     }
 
     @Then("the subtotal price in Cart should be correct")
-    public void the_subtotal_price_in_Cart_should_be_correct() {
+    public void theSubtotalPriceInCartShouldBeCorrect() {
         CartEntryInfo actualCartEntryInfo = cartPage.getCartEntryInfoForFirstProduct();
         assertEquals(World.getCartEntryInfo().getAmount(), actualCartEntryInfo.getAmount());
     }
 
     @Then("the quantity in Cart should be correct")
-    public void the_quantity_in_Cart_should_be_correct() {
+    public void theQuantityInCartShouldBeCorrect() {
         CartEntryInfo actualCartEntryInfo = cartPage.getCartEntryInfoForFirstProduct();
         assertEquals(World.getCartEntryInfo().getQuantity(), actualCartEntryInfo.getQuantity());
     }
