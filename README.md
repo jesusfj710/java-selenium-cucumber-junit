@@ -1,10 +1,14 @@
 # Java Selenium Cucumber JUnit Test Automation Framework
 
-Run the scenarios with the following command:
+Run the scenarios automated with the following command:
 
 ```bash
 mvn clean test
 ```
+
+After the scenarios are executed, a report will be generated in `report/cucumber-reports.html`. You can open this static html file in your browser to see the results.
+
+![Cucumber report](./docs/resources/report-example.png)
 
 ## First task - scenario
 
@@ -23,4 +27,4 @@ Test scenarios for Facebook sign-up page in a text file using Gherkin language m
 
 - [x] Set a World to be able to share information between steps in a secure and reliable way
 - [ ] Use a webdriver manager
-- [ ] Better reporting 
+- [x] Basic html reporting
